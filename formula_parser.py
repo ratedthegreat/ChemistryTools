@@ -90,7 +90,7 @@ def calculate_molar_mass(formula):
     Calculates the molar mass of a chemical compound using parsed formula.
     Works with JSON formatted like: {"elements": [{"symbol": "H", "atomic_mass": 1.008}, ...]}
     """
-    with open("chemistry_tools/PeriodicTableJSON.json", "r") as f:
+    with open("PeriodicTableJSON.json", "r") as f:
         data = json.load(f)
 
     # Build symbol → atomic_mass dictionary from list
